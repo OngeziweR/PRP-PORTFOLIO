@@ -1,13 +1,191 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Digital Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Digital Portfolio | Project Presentation 3</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin: 0 12px;
+            text-decoration: none;
+            color: #1f2937;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .welcome {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .sections {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #2563eb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            background-color: #1f2937;
+            color: white;
+        }
+    </style>
 </head>
+
 <body>
 
+<header>
     <h1>My Digital Portfolio</h1>
+    <p>Project Presentation 3 | Diploma in ICT</p>
+</header>
 
-    <p>Welcome to my Project Presentation 3 portfolio.</p>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="team-charter.html">Agile Team Charter</a>
+    <a href="user-stories.html">User Stories & Tasks</a>
+    <a href="product-backlog.html">Product Backlog</a>
+    <a href="sprint-backlog.html">Sprint Backlog</a>
+    <a href="agile-logbook.html">Agile Logbook</a>
+</nav>
+
+<main>
+
+    <section class="welcome">
+        <h2>Welcome to My Digital Portfolio</h2>
+
+        <p>
+            Welcome to my Project Presentation 3 Digital Portfolio.
+            This portfolio presents evidence of my work and learning
+            throughout the Agile project process.
+        </p>
+
+        <p>
+            The portfolio contains my Agile Team Charter, User Stories
+            and Tasks, Product Backlog, Sprint Backlog, and Agile Logbook.
+            Each section includes evidence and reflection on my learning
+            and contribution to the project.
+        </p>
+    </section>
+
+    <section class="sections">
+
+        <div class="card">
+            <h3>Agile Team Charter</h3>
+            <p>
+                Evidence and reflection relating to the team's Agile
+                working agreement and responsibilities.
+            </p>
+            <a href="team-charter.html">View Section →</a>
+        </div>
+
+        <div class="card">
+            <h3>User Stories & Tasks</h3>
+            <p>
+                User stories, tasks, and evidence showing how project
+                requirements were identified and organised.
+            </p>
+            <a href="user-stories.html">View Section →</a>
+        </div>
+
+        <div class="card">
+            <h3>Product Backlog</h3>
+            <p>
+                Evidence and reflection on the product backlog and
+                prioritisation of project requirements.
+            </p>
+            <a href="product-backlog.html">View Section →</a>
+        </div>
+
+        <div class="card">
+            <h3>Sprint Backlog</h3>
+            <p>
+                Evidence showing the work selected and planned for
+                the project's sprint.
+            </p>
+            <a href="sprint-backlog.html">View Section →</a>
+        </div>
+
+        <div class="card">
+            <h3>Agile Logbook</h3>
+            <p>
+                A record of Agile activities, progress, challenges,
+                learning, and reflections throughout the project.
+            </p>
+            <a href="agile-logbook.html">View Section →</a>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Project Presentation 3 | Digital Portfolio</p>
+</footer>
 
 </body>
 </html>
