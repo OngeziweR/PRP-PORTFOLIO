@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Backlog | PRP Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 8px;
+            font-size: 32px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #111827;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 9px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background: #374151;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: #1f2937;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #374151;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+        }
+
+        .overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .overview-card {
+            background: #f3f4f6;
+            padding: 18px;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #4b5563;
+        }
+
+        .overview-card strong {
+            display: block;
+            font-size: 25px;
+            color: #1f2937;
+        }
+
+        .sprint {
+            margin-top: 25px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .sprint-title {
+            background: #374151;
+            color: white;
+            padding: 14px 18px;
+            font-size: 19px;
+            font-weight: bold;
+        }
+
+        .backlog-item {
+            display: flex;
+            gap: 15px;
+            padding: 13px 18px;
+            border-bottom: 1px solid #e5e7eb;
+            background: white;
+        }
+
+        .backlog-item:last-child {
+            border-bottom: none;
+        }
+
+        .day {
+            min-width: 75px;
+            font-weight: bold;
+            color: #4b5563;
+        }
+
+        .task {
+            color: #374151;
+        }
+
+        .evidence-box {
+            background: #f9fafb;
+            border-left: 5px solid #4b5563;
+            padding: 18px;
+            margin-top: 15px;
+            border-radius: 6px;
+        }
+
+        .reflection {
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 120px;
+        }
+
+        footer {
+            text-align: center;
+            background: #1f2937;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 26px;
+            }
+
+            main {
+                padding: 0 12px;
+            }
+
+            section {
+                padding: 18px;
+            }
+
+            .backlog-item {
+                flex-direction: column;
+                gap: 3px;
+            }
+
+            .day {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Product Backlog</h1>
+    <p>Second-Hand Textbook Swap | PRP372S – Project Presentation 3</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="team-charter.html">Team Charter</a>
+    <a href="user-stories.html">User Stories & Tasks</a>
+    <a href="product-backlog.html">Product Backlog</a>
+    <a href="sprint-backlog.html">Sprint Backlog</a>
+    <a href="agile-logbook.html">Agile Logbook</a>
+</nav>
+
+<main>
+
+    <!-- PRODUCT BACKLOG OVERVIEW -->
+    <section>
+        <h2>Product Backlog Overview</h2>
+
+        <p>
+            The Product Backlog for the Second-Hand Textbook Swap project
+            contains the planned work required to develop the project from
+            the initial business idea through to system development, testing,
+            documentation, and final presentation.
+        </p>
+
+        <p>
+            The backlog was managed using Trello and organised according to
+            sprints and project days. The backlog shows the progression of
+            the project from business planning and requirements gathering
+            to design, development, testing, documentation, and finalisation.
+        </p>
+
+        <div class="overview">
+
+            <div class="overview-card">
+                <strong>7</strong>
+                Sprints
+            </div>
+
+            <div class="overview-card">
+                <strong>54</strong>
+                Backlog Items
+            </div>
+
+            <div class="overview-card">
+                <strong>54</strong>
+                Project Days
+            </div>
+
+            <div class="overview-card">
+                <strong>7</strong>
+                Project Phases
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- TRELLO EVIDENCE -->
+    <section>
+        <h2>Trello Product Backlog Evidence</h2>
+
+        <p>
+            The Product Backlog was maintained using Trello. The screenshots
+            below provide evidence of the backlog structure and show completed
+            backlog cards assigned to the project team.
+        </p>
+
+        <div class="evidence-box">
+
+            <p>
+                <strong>Evidence 1:</strong>
+                Trello Product Backlog showing the initial project
+                initiation and business planning activities.
+            </p>
+
+            <p>
+                <strong>Evidence 2:</strong>
+                Trello Product Backlog showing Sprint 1 activities,
+                including problem statement development, stakeholder
+                identification, market research, competitor analysis,
+                and SWOT analysis.
+            </p>
+
+            <p>
+                The Trello cards show tasks organised according to project
+                days and sprints. The cards also display completion
+                indicators and team members associated with the work.
+            </p>
+
+        </div>
+
+        <p>
+            These screenshots demonstrate that Trello was used as a central
+            tool for organising, assigning, and tracking the project work.
+        </p>
+    </section>
+
+
+    <!-- BACKLOG ITEMS -->
+    <section>
+        <h2>Product Backlog Items</h2>
+
+        <p>
+            The following backlog items represent the planned work for the
+            Second-Hand Textbook Swap project. The items are organised
+            according to the seven sprints shown in the Product Backlog.
+        </p>
+
+
+        <!-- SPRINT 1 -->
+        <div class="sprint">
+
+            <div class="sprint-title">
+                Sprint 1 – Business Planning
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 1</div>
+                <div class="task">
+                    Project Initiation & Business Planning
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 2</div>
+                <div class="task">
+                    Develop the Problem Statement
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 3</div>
+                <div class="task">
+                    Identify Stakeholders
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 4</div>
+                <div class="task">
+                    Conduct Market Research
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 5</div>
+                <div class="task">
+                    Analyse Competitors
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 6</div>
+                <div class="task">
+                    Complete the SWOT Analysis
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 7</div>
+                <div class="task">
+                    Define the Target Market
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 8</div>
+                <div class="task">
+                    Develop the Value Proposition
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SPRINT 2 -->
+        <div class="sprint">
+
+            <div class="sprint-title">
+                Sprint 2 – Business Planning
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 9</div>
+                <div class="task">
+                    Develop the Mission and Vision Statement
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 10</div>
+                <div class="task">
+                    Define Business Goals and Objectives
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 11</div>
+                <div class="task">
+                    Develop the Business Model
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 12</div>
+                <div class="task">
+                    Create the Marketing Strategy
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 13</div>
+                <div class="task">
+                    Develop the Operational Plan
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 14</div>
+                <div class="task">
+                    Prepare the Financial Plan
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 15</div>
+                <div class="task">
+                    Conduct Risk Analysis
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 16</div>
+                <div class="task">
+                    Complete the Executive Summary
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SPRINT 3 -->
+        <div class="sprint">
+
+            <div class="sprint-title">
+                Sprint 3 – Requirements and System Design
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 17</div>
+                <div class="task">
+                    Gather Functional Requirements
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 18</div>
+                <div class="task">
+                    Gather Non-Functional Requirements
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 19</div>
+                <div class="task">
+                    Create User Stories
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 20</div>
+                <div class="task">
+                    Design the System Architecture
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 21</div>
+                <div class="task">
+                    Design the Database Structure
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 22</div>
+                <div class="task">
+                    Create the ERD
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 23</div>
+                <div class="task">
+                    Create the Use Case Diagram
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 24</div>
+                <div class="task">
+                    Design the Wireframes
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SPRINT 4 -->
+        <div class="sprint">
+
+            <div class="sprint-title">
+                Sprint 4 – UI and Prototype Design
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 25</div>
+                <div class="task">
+                    Design the Home Page
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 26</div>
+                <div class="task">
+                    Design the User Registration Page
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 27</div>
+                <div class="task">
+                    Design the User Dashboard
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 28</div>
+                <div class="task">
+                    Design the Textbook Listings Page
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 29</div>
+                <div class="task">
+                    Design the Search & Filter Interface
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 30</div>
+                <div class="task">
+                    Design the Messaging Interface
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 31</div>
+                <div class="task">
+                    Review the Complete Prototype
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 32</div>
+                <div class="task">
+                    Finalize the UI Design
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SPRINT 5 -->
+        <div class="sprint">
+
+            <div class="sprint-title">
+                Sprint 5 – Development
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 33</div>
+                <div class="task">
+                    Develop User Registration
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 34</div>
+                <div class="task">
+                    Develop User Login
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 35</div>
+                <div class="task">
+                    Develop User Profile Management
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 36</div>
+                <div class="task">
+                    Develop Textbook Listings
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 37</div>
+                <div class="task">
+                    Develop Search and Filter Functionality
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 38</div>
+                <div class="task">
+                    Develop Buyer and Seller Messaging
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 39</div>
+                <div class="task">
+                    Integrate Frontend with Backend
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 40</div>
+                <div class="task">
+                    Review Sprint 5 Development
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SPRINT 6 -->
+        <div class="sprint">
+
+            <div class="sprint-title">
+                Sprint 6 – Testing and Improvement
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 41</div>
+                <div class="task">
+                    Test User Registration
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 42</div>
+                <div class="task">
+                    Test User Login
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 43</div>
+                <div class="task">
+                    Test Textbook Listings
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 44</div>
+                <div class="task">
+                    Test Search and Filter Features
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 45</div>
+                <div class="task">
+                    Test Buyer and Seller Messaging
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 46</div>
+                <div class="task">
+                    Fix Bugs and Improve Performance
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 47</div>
+                <div class="task">
+                    Conduct User Acceptance Testing
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- SPRINT 7 -->
+        <div class="sprint">
+
+            <div class="sprint-title">
+                Sprint 7 – Documentation and Finalisation
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 48</div>
+                <div class="task">
+                    Complete the Technical Documentation
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 49</div>
+                <div class="task">
+                    Complete the User Manual
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 50</div>
+                <div class="task">
+                    Review the Entire System
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 51</div>
+                <div class="task">
+                    Prepare the Final Presentation
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 52</div>
+                <div class="task">
+                    Prepare the Live Demonstration
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 53</div>
+                <div class="task">
+                    Conduct the Final Product Review
+                </div>
+            </div>
+
+            <div class="backlog-item">
+                <div class="day">Day 54</div>
+                <div class="task">
+                    Submit the Final Project
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EVIDENCE EXPLANATION -->
+    <section>
+        <h2>Evidence Explanation</h2>
+
+        <p>
+            The Product Backlog demonstrates how the project work was planned
+            and organised throughout the development process. The backlog
+            contains activities covering business planning, requirements
+            gathering, system design, user interface design, development,
+            testing, documentation, and final presentation preparation.
+        </p>
+
+        <p>
+            Organising the work into sprints made it possible for the team
+            to divide the larger project into smaller stages. Each stage
+            focused on a specific area of the project and provided a
+            sequence for completing the required work.
+        </p>
+
+        <p>
+            The Trello board also provided a central location where the
+            team could monitor project tasks, identify completed work,
+            and keep track of the project's progress.
+        </p>
+
+        <p>
+            The Product Backlog therefore provided the team with a structured
+            view of the work that needed to be completed from project
+            initiation through to final submission.
+        </p>
+    </section>
+
+
+    <!-- REFLECTION -->
+    <section>
+        <h2>Reflection</h2>
+
+        <div class="reflection">
+
+            <p>
+                <strong>My Reflection</strong>
+            </p>
+
+            <p>
+                Reflection to be added after considering my personal
+                contribution, what I learned from using the Product Backlog,
+                and how the backlog helped the team manage the project.
+            </p>
+
+        </div>
+    </section>
+
+</main>
+
+
+<footer>
+    <p>
+        PRP372S – Project Presentation 3 | Digital Portfolio
+    </p>
+</footer>
+
+</body>
+</html>
